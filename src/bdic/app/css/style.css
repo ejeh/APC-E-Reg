@@ -20670,7 +20670,7 @@ Fixing Order => Base + Typography >> General Layout + Grid >> Page Layout + Comp
 
 [data-nav-headerbg="color_3"][data-theme-version="dark"] .nav-header,
 [data-nav-headerbg="color_3"] .nav-header {
-  background-color: #2c6e49;
+  background-color: #00a457;
   border-color: rgba(255, 255, 255, 0.15);
 }
 [data-nav-headerbg="color_3"][data-theme-version="dark"]
@@ -28027,7 +28027,7 @@ Fixing Order => Base + Typography >> General Layout + Grid >> Page Layout + Comp
 
 [data-sibebarbg="color_3"][data-theme-version="dark"] .deznav,
 [data-sibebarbg="color_3"] .deznav {
-  background-color: #4c956c;
+  background-color: #4c9557;
 }
 [data-sibebarbg="color_3"][data-theme-version="dark"]
   .deznav
@@ -28150,7 +28150,7 @@ Fixing Order => Base + Typography >> General Layout + Grid >> Page Layout + Comp
 [data-sibebarbg="color_3"] .deznav .metismenu > li:focus > a i,
 [data-sibebarbg="color_3"] .deznav .metismenu > li.mm-active > a i {
   background: #fff !important;
-  color: #222fb9 !important;
+  color: #f36319 !important;
 }
 [data-sibebarbg="color_3"][data-theme-version="dark"]
   .deznav
@@ -44903,7 +44903,7 @@ Fixing Order => Base + Typography >> General Layout + Grid >> Page Layout + Comp
 
 [data-headerbg="color_1"] .nav-header .hamburger.is-active .line,
 [data-headerbg="color_1"] .nav-header .hamburger .line {
-  background: #2c6e49;
+  background: #f36319;
 }
 
 @media (min-width: 992px) {

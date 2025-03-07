@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>BIRCIIRCIMS - Login</title>
+    <title>BSAERS - Login</title>
     <!-- Bootstrap CSS -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
@@ -17,7 +17,7 @@
     <link
       rel="icon"
       type="image/png"
-      href="/assets/images/gov-logo.jpg"
+      href="/assets/images/APC.png"
       sizes="16x16"
     />
 
@@ -25,13 +25,15 @@
     <!-- Custom CSS -->
     <style>
       body {
-        background: linear-gradient(90deg, #008080 0%, #2e8b57 100%);
+        /* background: linear-gradient(90deg, #008080 0%, #2e8b57 100%); */
+        background: linear-gradient(90deg, #009959 0%, #45c4f9 100%);
         min-height: 100vh;
         display: flex;
         justify-content: center;
         align-items: center;
         font-family: "Arial", sans-serif;
         margin: 0;
+        /* overflow-y: hidden; */
       }
       .login-container {
         background: #fff;
@@ -85,18 +87,24 @@
         cursor: pointer;
         color: #666;
       }
+      .mb-3 {
+        margin-bottom: 0rem !important;
+      }
     </style>
   </head>
   <body>
     <div id="loginSection" class="login-container">
+      <h3 style="font-weight: 700">LOGIN</h3>
       <div class="card-header text-center">
-        <!-- <h6 class="subtitle mb-3 text-muted"> -->
+        <img
+          class="img-fluid w-50"
+          src="/assets/images/APC.png"
+          alt="Benue State Logo"
+          height="20%"
+        />
         <h6 class="subtitle mb-3 font-weight-bold">
-          Benue State Integrated Residents/Citizens <br />
-          Identity/Indigeneship Registration <br />
-          and Card Issuance Management System
+          Benue State APC E-membership Registration System
         </h6>
-        <h4 class="main-title mb-0 font-weight-bold">(BIRCIIRCIMS)</h4>
       </div>
 
       <form id="signInForm">

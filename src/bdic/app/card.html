@@ -239,6 +239,16 @@
                         />
                       </div>
                       <div class="col-sm-6 m-b30">
+                        <label class="form-label">Middlename</label>
+                        <input
+                          id="middlename"
+                          type="text"
+                          class="form-control"
+                          name="middlename"
+                          required
+                        />
+                      </div>
+                      <div class="col-sm-6 m-b30">
                         <label class="form-label">Lastname</label>
                         <input
                           id="lastname"
@@ -273,28 +283,66 @@
                           readonly
                         />
                       </div>
-                      <h4 class="card-title">Supporting Documents</h4>
+
                       <div class="col-sm-6 m-b30">
-                        <label class="form-label">Refrence Letter </label>
+                        <label class="form-label">Voter's Card Number</label>
                         <input
-                          type="file"
+                          id="voters_card_no"
+                          type="text"
                           class="form-control"
+                          name="voters_card_no"
                           required
-                          name="files"
                         />
-                        <small id="phoneHelp" class="form-text text-muted"
-                          >From a clergy member or person in authority
-                        </small>
+                      </div>
+                      <div class="col-sm-6 m-b30">
+                        <label class="form-label"
+                          >Local Government Area (LGA)</label
+                        >
+                        <!-- class="form-control" -->
+                        <select
+                          id="lga"
+                          name="lga"
+                          class="selectpicker nice-select default-select form-control wide mh-auto"
+                          data-live-search="true"
+                          required
+                          readonly
+                        >
+                          <option value="">Select LGA</option>
+                          <!-- LGAs will be populated here by JavaScript -->
+                        </select>
                       </div>
 
                       <div class="col-sm-6 m-b30">
-                        <label class="form-label"> Utility Bill </label>
-                        <input
-                          type="file"
-                          class="form-control"
+                        <label class="form-label">Ward</label>
+                        <!-- class="form-control" -->
+                        <select
+                          id="ward"
+                          name="ward"
+                          class="selectpicker nice-select default-select form-control wide mh-auto"
+                          data-live-search="true"
+                          disabled
                           required
-                          name="files"
-                        />
+                          readonly
+                        >
+                          <option value="">Select a Ward</option>
+                          <!-- Wards will be populated here by JavaScript -->
+                        </select>
+                      </div>
+
+                      <div class="col-sm-6 m-b30">
+                        <label class="form-label">Polling Unit</label>
+                        <select
+                          id="polling_unit"
+                          name="polling_unit"
+                          class="selectpicker nice-select default-select form-control wide mh-auto"
+                          data-live-search="true"
+                          required
+                          disabled
+                          readonly
+                        >
+                          <option value="">Select a Polling Unit</option>
+                          <!-- Polling units will be populated here dynamically -->
+                        </select>
                       </div>
                     </div>
                   </div>
@@ -420,5 +468,6 @@
     <script src="js/deznav-init.js"></script>
     <script src="js/demo.js"></script>
     <script type="text/javascript" src="/js/index.js"></script>
+    <script type="text/javascript" src="/js/json.js"></script>
   </body>
 </html>

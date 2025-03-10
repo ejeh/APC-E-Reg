@@ -19,15 +19,16 @@
       sizes="16x16"
       href="/assets/images/APC.png"
     />
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+
+    <!-- <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script> -->
     <link
       rel="stylesheet"
       href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
-    <link
+    <!-- <link
       href="vendor/bootstrap-select/dist/css/bootstrap-select.min.css"
       rel="stylesheet"
-    />
+    /> -->
     <link href="css/style.css" rel="stylesheet" />
     <link
       rel="stylesheet"
@@ -37,15 +38,22 @@
     <script src="../../unpkg.com/sweetalert%402.1.2/dist/sweetalert.min.js"></script>
     <link href="vendor/sweetalert2/dist/sweetalert2.min.css" rel="stylesheet" />
     <script src="../../ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-    <!-- Load jQuery -->
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <!-- Load Select2 CSS -->
-    <link
+    <!-- <link
       href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css"
       rel="stylesheet"
-    />
+    /> -->
     <!-- Load Select2 JS -->
-    <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script> -->
+    <!-- <script src="vendor/global/global.min.js"></script> -->
+    <!-- <link
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      rel="stylesheet"
+    /> -->
+    <!-- Bootstrap Select CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-select@1.13.18/dist/css/bootstrap-select.min.css"
+    />
 
     <style>
       .error-message {
@@ -121,21 +129,6 @@
               <div class="header-left">
                 <div class="dashboard_bar">Profile</div>
               </div>
-              <!-- <ul class="navbar-nav header-right">
-                <li class="nav-item dropdown notification_dropdown">
-                  <div class="input-group search-area">
-                    <input
-                      type="text"
-                      class="form-control"
-                      placeholder="Search here..."
-                    />
-                    <span class="input-group-text"
-                      ><a href="javascript:void(0)"
-                        ><i class="flaticon-381-search-2"></i></a
-                    ></span>
-                  </div>
-                </li>
-              </ul> -->
             </div>
           </nav>
         </div>
@@ -311,64 +304,6 @@
                         />
                       </div>
 
-                      <!-- <div class="col-sm-6 m-b30">
-                        <label class="form-label">Select State Of Origin</label>
-
-                        <select
-                          id="stateOfOrigin"
-                          class="selectpicker nice-select default-select form-control wide mh-auto"
-                          onchange="updateLocalGovernmentsOfOrigin()"
-                          required
-                        >
-                          <option value="">Select State</option>
-                          <option value="adamawa">Adamawa</option>
-                          <option value="akwa_ibom">Akwa Ibom</option>
-                          <option value="anambra">Anambra</option>
-                          <option value="abia">Abia</option>
-                          <option value="bauchi">Bauchi</option>
-                          <option value="benue">Benue</option>
-                          <option value="borno">Borno</option>
-                          <option value="bayelsa">Bayelsa</option>
-                          <option value="delta">Delta</option>
-                          <option value="ebonyi">Ebonyi</option>
-                          <option value="edo">Edo</option>
-                          <option value="enugu">Enugu</option>
-                          <option value="abuja">abuja</option>
-                          <option value="gombe">Gombe</option>
-                          <option value="jigawa">Jigawa</option>
-                          <option value="ekiti">Ekiti</option>
-                          <option value="lagos">Lagos</option>
-                          <option value="oyo">Oyo</option>
-                          <option value="imo">Imo</option>
-                          <option value="kaduna">Kaduna</option>
-                          <option value="kebbi">Kebbi</option>
-                          <option value="kano">Kano</option>
-                          <option value="kogi">Kogi</option>
-                          <option value="osun">Osun</option>
-                          <option value="sokoto">Sokoto</option>
-                          <option value="plateau">Plateau</option>
-                          <option value="taraba">Taraba</option>
-                          <option value="yobe">Yobe</option>
-                          <option value="zamfara">zamfara</option>
-                          <option value="katsina">Katsina</option>
-                          <option value="kwara">Kwara</option>
-                          <option value="nasarawa">Nasarawa</option>
-                          <option value="niger">Niger</option>
-                          <option value="rivers">Rivers</option>
-                        </select>
-                      </div> -->
-                      <!-- <div class="col-sm-6 m-b30">
-                        <label class="form-label"
-                          >Select Local Government Of Origin</label
-                        >
-                        <select
-                          id="lgaOfOrigin"
-                          class="nice-select form-control wide mh-auto"
-                          required
-                        >
-                          <option value="">Select Local Government</option>
-                        </select>
-                      </div> -->
                       <div class="col-sm-6 m-b30">
                         <label class="form-label">Voter's Card Number</label>
                         <input
@@ -379,16 +314,6 @@
                           required
                         />
                       </div>
-                      <!-- <div class="col-sm-6 m-b30">
-                        <label class="form-label">Polling Unit</label>
-                        <input
-                          id="polling_unit"
-                          type="text"
-                          class="form-control"
-                          name="polling_unit"
-                          required
-                        />
-                      </div> -->
 
                       <div class="col-sm-6 m-b30">
                         <label class="form-label">Registration Area</label>
@@ -427,14 +352,31 @@
                           <option value="member">Member</option>
                         </select>
                       </div>
+                      <div class="col-sm-6 m-b30">
+                        <label class="form-label"
+                          >Local Government Area (LGA)</label
+                        >
+                        <!-- class="form-control" -->
+                        <select
+                          id="lga"
+                          class="selectpicker nice-select default-select form-control wide mh-auto"
+                          data-live-search="true"
+                          required
+                        >
+                          <option value="">Select LGA</option>
+                          <!-- LGAs will be populated here by JavaScript -->
+                        </select>
+                      </div>
 
                       <div class="col-sm-6 m-b30">
                         <label class="form-label">Ward</label>
+                        <!-- class="form-control" -->
                         <select
                           id="ward"
-                          name="ward"
+                          class="selectpicker nice-select default-select form-control wide mh-auto"
+                          data-live-search="true"
+                          disabled
                           required
-                          class="form-control"
                         >
                           <option value="">Select a Ward</option>
                           <!-- Wards will be populated here by JavaScript -->
@@ -444,10 +386,10 @@
                       <div class="col-sm-6 m-b30">
                         <label class="form-label">Polling Unit</label>
                         <select
-                          id="polling-unit"
-                          name="polling-unit"
+                          id="polling_unit"
+                          class="selectpicker nice-select default-select form-control wide mh-auto"
+                          data-live-search="true"
                           required
-                          class="form-control"
                           disabled
                         >
                           <option value="">Select a Polling Unit</option>
@@ -464,7 +406,6 @@
                           type="file"
                           class="form-control"
                           name="passportPhoto"
-                          required
                         />
                       </div>
                     </div>
@@ -525,200 +466,21 @@
       async
     ></script>
 
-    <!-- Custom Script
-    <script>
-      $(document).ready(function () {
-        // Example list of wards in Benue State
-        const wards = [
-          "EGBA",
-          "ENUNGBA",
-          "OBAGAJI",
-          "ODUGBEHO",
-          "OGBAULU",
-          "OGWULE OGBAULU",
-          "OGWULE-KADUNA",
-          "OKOKOLO",
-          "OSHIGBUDU",
-          "USHA",
-          "IGAH-OKPAYA",
-          "OFOKE",
-          "OJJI",
-          "UGBOKPO",
-          "BINEV",
-          "MBAAKURA",
-          "MBAAPEN",
-          "MBAATIRKYAA",
-          "MBAIKYONGO/INTIFON",
-          "MBAYA",
-          "KAAMBE",
-          "MBABAI",
-          "MBAWA",
-          "NZOROV",
-          "GAAMBE - USHIN",
-          "GBAANGETONGOV",
-          "IKYAGHEV",
-          "ITYOUGHATEE/INJAHA",
-          "MBACHOHON",
-          "MBANYAMSHI",
-          "MERKYEN",
-          "SENGEV",
-          "IKURAV TIEV I",
-          "IWARTONGOV I)",
-          "KATSINA-ALA TOWN",
-          "IKYURAV/MBATWER",
-          "MBAGUSA/MBATSER",
-          "MBAIKYASE",
-          "MBATSEN",
-          "MBADURA",
-          "MBAIKYOR",
-          "YAAV",
-          "MBAGBER",
-          "MBAVUUR",
-          "MBAYAM",
-          "TOMBO",
-          "UKEMBERGYA/ISWAREV",
-          "AGAN",
-          "BAR",
-          "FILDI",
-          "MODERN MARKET",
-          "NORTH BANK I",
-          "NORTH BANK II",
-          "MBAAYO",
-          "MBAIKYAA",
-          "MBAIKYO/MBAYIA",
-          "MBAKWAKEM",
-          "MBANYAGBER",
-          "SHITILE",
-          "TONGOV",
-          "ATERAYANGE",
-          "AZENDESHI",
-          "BORIKYO",
-          "KENDEV",
-          "LUMBUV",
-          "MBATIAN",
-          "MBAYENGE",
-          "MBAZUN",
-          "TSAAV",
-          "UYAM",
-          "MBAGWAZA",
-          "MBADEDE",
-          "MBANYUMANGBAGH",
-          "MBATYOUGH",
-        ];
-
-        // Populate the dropdown with wards
-        const wardDropdown = $("#ward");
-        wards.forEach((ward) => {
-          wardDropdown.append(new Option(ward, ward));
-        });
-
-        // Initialize Select2
-        wardDropdown.select2({
-          placeholder: "Search for a ward...",
-          allowClear: true,
-        });
-      });
-    </script> -->
-
-    <!--**********************************
-        Scripts
-    ***********************************-->
-    <!-- Required vendors -->
-    <!-- Include jQuery -->
+    <!-- Bootstrap Select JS -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <script src="vendor/global/global.min.js"></script>
+
     <!-- Include Select2 JS -->
-    <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script> -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
 
-    <script>
-      $(document).ready(function () {
-        console.log("Document is ready"); // Debugging
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap-select@1.13.18/dist/js/bootstrap-select.min.js"></script>
 
-        // Debugging: Verify Select2 is available
-        console.log("Select2 is available:", $.fn.select2);
-
-        // Example data: Mapping of wards to polling units
-        const wardPollingUnits = {
-          EGBA: ["PU 001 - EGBA Primary School", "PU 002 - EGBA Town Hall"],
-          ENUNGBA: [
-            "PU 003 - ENUNGBA Market",
-            "PU 004 - ENUNGBA Community Center",
-          ],
-          OBAGAJI: [
-            "PU 005 - OBAGAJI Primary School",
-            "PU 006 - OBAGAJI Church",
-          ],
-          ODUGBEHO: ["PU 007 - ODUGBEHO Town Hall", "PU 008 - ODUGBEHO Market"],
-          OGBAULU: [
-            "PU 009 - OGBAULU Primary School",
-            "PU 010 - OGBAULU Health Center",
-          ],
-          // Add more wards and their polling units here
-        };
-
-        // Populate the ward dropdown
-        const wardDropdown = $("#ward");
-        Object.keys(wardPollingUnits).forEach((ward) => {
-          wardDropdown.append(new Option(ward, ward));
-        });
-
-        // Initialize Select2 for the ward dropdown
-        wardDropdown.select2({
-          placeholder: "Search for a ward...",
-          allowClear: true,
-        });
-
-        // Debugging: Log the ward dropdown element
-        console.log("Ward Dropdown Element:", wardDropdown);
-
-        // Event listener for ward selection
-        wardDropdown.on("change", function () {
-          console.log("Ward dropdown change event triggered"); // Debugging
-          const selectedWard = $(this).val();
-          console.log("Selected Ward:", selectedWard); // Debugging
-
-          const pollingUnitDropdown = $("#polling-unit");
-
-          // Clear previous polling units
-          pollingUnitDropdown
-            .empty()
-            .append('<option value="">Select a Polling Unit</option>');
-
-          if (selectedWard) {
-            console.log("Enabling polling unit dropdown"); // Debugging
-            // Enable the polling unit dropdown
-            pollingUnitDropdown.prop("disabled", false);
-
-            // Populate polling units for the selected ward
-            const pollingUnits = wardPollingUnits[selectedWard];
-            if (pollingUnits && pollingUnits.length > 0) {
-              pollingUnits.forEach((pu) => {
-                pollingUnitDropdown.append(new Option(pu, pu));
-              });
-            } else {
-              pollingUnitDropdown.append(
-                new Option("No polling units found", "")
-              );
-            }
-
-            // Initialize Select2 for the polling unit dropdown
-            pollingUnitDropdown.select2({
-              placeholder: "Search for a polling unit...",
-              allowClear: true,
-            });
-          } else {
-            console.log("Disabling polling unit dropdown"); // Debugging
-            // Disable the polling unit dropdown if no ward is selected
-            pollingUnitDropdown.prop("disabled", true);
-          }
-        });
-
-        // Debugging: Manually trigger the change event to test
-        wardDropdown.trigger("change");
-      });
-    </script>
     <script src="vendor/sweetalert2/dist/sweetalert2.min.js"></script>
     <script src="js/plugins-init/sweetalert.init.js"></script>
-    <script src="vendor/global/global.min.js"></script>
+    <!-- <script src="vendor/global/global.min.js"></script> -->
+
     <script src="vendor/bootstrap-select/dist/js/bootstrap-select.min.js"></script>
     <script src="vendor/chart.js/Chart.bundle.min.js"></script>
     <script src="vendor/bootstrap-datetimepicker/js/moment.js"></script>
@@ -728,5 +490,6 @@
     <script src="js/deznav-init.js"></script>
     <script src="js/demo.js"></script>
     <script type="text/javascript" src="/js/index.js"></script>
+    <script type="text/javascript" src="/js/json.js"></script>
   </body>
 </html>
